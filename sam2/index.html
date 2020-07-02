@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+  ​<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+​<style>
+
+</style>
+</head>
+<body>
+<img src="img/im4.png" style="position:fixed;top:0px;width:100%;height: 700px;;">
+<h1 style="color:white;position:absolute;top:200px;left:35%;"><b>The Siams blog</b></h1>
+<form  class="example" action="action_page.php" style="position:absolute;left:20%;top:2px;width:80%;">
+  <input style="width:70%;height:50px;background-color:transparent;color:white;" type="text" placeholder="Search.." name="search">
+  <button   style="color:white;border:none;background-color:transparent;width:10%;height:100px;"type="submit"><i class="fa fa-search"></i></button>
+</form>
+<h1 class="animate__animated animate__bounceInDown" style="font-size:30pt;position:absolute;top:300px;color:white;left:32%;">
+<i><b>An amazing blog</b></i></h1>
+<a style="color:white;position:absolute;left:3%;top:10px;padding:10px;font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</a>
+
+<div id="myNav" class="overlay">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+ function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+<br><br><br><br><br>
+<div class="flex"style="color:white;top:500px;position:relative">
+<div style="width:50%;">
+<h3 style="color:white;">
+
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
+
+</h3>
+</div>
+<img src="img/im1.jpg" style="width:40%;height:400px;"/>
+
+
+</div>
+<center>
+<video controls style="position:relative;top:500px;width:50%;height:300px;"></video>
+</center>
+<br><br><br>
+<div class="posts" style="color:white;position:relative;top:500px;">
+<center><h2><u>Latest posts</u></h2></center>
+<?php
+$a=
+"<div class='' style='display:flex;'>
+<img src='img/im1.jpg' style='width:40%;height:200px;'/>
+<div style='padding:10px;'>
+<h2>This is headline</h2>
+<h3>This is a short description.this uis a short description</h3>
+<span  class='btn btn-primary' style='color:white'><a href='connect.php'style='color:white'>Read more</a></span>
+<br>
+<a>coments</a>
+</div>
+</div>
+<br><br>";
+ echo $a;
+ echo $a;
+ 
+ echo $a;
+?>
+</div>
+
+
+<div style="position:relative;top:500px;font-size:20pt;color:white">
+<center>
+<h2>------------catagories---------</h2>
+<ul>
+<li><a style="color:white">phone</a></li>
+<li><a style="color:white">software</a></li>
+<li><a style="color:white">Desktop</a></li>
+<li><a style="color:white">Laptop</a></li>
+<li><a style="color:white">News</a></li>
+</ul>
+</center>
+</div>
+<div style="position:relative;top:500px;width:100%;background-color:black">
+<h2 align="center"style="color:white;">Made by Webcare</h2>
+<h3 align="center"style="color:white">copyright@webcaree</h3>
+</div>
+
+</body>
+</html>
