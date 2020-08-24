@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+    body{
+        padding:0px;
+        margin:0px;
+    }
+    .menu{
+        background-color: orange;
+        color:white;
+    }
+    </style>
+</head>
+<body>
+<div class="menu">
+    <center><h1>Calculate percentage</h1></center>
+
+    </div>
+    
+    <div style="position:relative;top:150px;">
+        <center>
+        <input type="number" id="n1" value="" style="font-size:20pt"placeholder="found"></input><br/><br/>
+        <input type="number" id="n2"style="font-size:20pt" placeholder="total"/><br/><br/>
+        
+        <a class="btn btn-primary" onclick="myfun()">calculate </a>    
+        <h1 id="demo"></h1>
+    </center>
+        </div>
+        
+
+
+
+
+        <script>
+          
+            function myfun(){
+                var x=document.getElementById("n1").value;
+                var y=document.getElementById("n2").value;
+                var z=x/y;
+                var m= z*100;
+        
+                 document.getElementById("demo").innerHTML="percentage is "+ m +"%";
+            
+                
+                
+            }
+            </script>
+</body>
+</html>
